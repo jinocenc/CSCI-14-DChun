@@ -34,7 +34,7 @@ int     main(void)
 
     if (pay_rate < 0 || workhour_total < 0)
     {
-        cout << "Sorry, you entered a negative value and your paycheck cannot be computed." << endl;
+        cout << "\nSorry, you entered a negative value and your paycheck cannot be computed." << endl;
         return 0;
     }
     if (pay_rate < 10.75) pay_rate = 10.75;

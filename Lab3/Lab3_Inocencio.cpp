@@ -38,7 +38,6 @@ int     main(void)
         if (quantity > 0)
         {
             printf("%d  %s\n", quantity, categories[i]);
-            //cout << quantity << " " << leftover << endl;
         }
         else continue;
     }
