@@ -9,7 +9,7 @@ You are using the switch to calculate the quantity discount.
 #include <iomanip>
 
 // Declare global constants =================================================================================
-char    names[5][24] = {"Milk Chocolate", "Dark European Chocolate", "White Chocolate", "European Truffles"};
+char    names[5][25] = {"Milk Chocolate", "Dark European Chocolate", "White Chocolate", "European Truffles"};
 float   costs[5] = {8.50, 9.75, 10.50, 12.50};
 float   shipping = .10; // 10% of subtotal
 
@@ -62,19 +62,21 @@ int     main(void)
 
 }
 
-float sum_arr(float array[])
+float   sum_arr(float array[])
 {
     float val = 0;
     int i = 0;
+    std::cout << array[i];
     while(array[i] != '\0')
     {
         val = val + array[i];
+        std::cout << array[i];
         i++;
     }
     return val;
 }
 
-int   which_discount(float  gross) // returns an integer to be interpreted
+int     which_discount(float  gross) // returns an integer to be interpreted
 {
     if(gross >= 20 && gross < 39.99)
     {
