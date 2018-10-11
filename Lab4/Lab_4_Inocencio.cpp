@@ -29,6 +29,6 @@ int     main(void)
             cout << " = " << sum << endl;
         }
     }
-    cout << "You ran the loop " << N << " times.";
+    cout << "You ran the 'For Loop' " << N << " times.";
     return 0;
 }
